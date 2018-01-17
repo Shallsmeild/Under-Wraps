@@ -1,0 +1,103 @@
+p {
+    
+}
+
+h1 {
+    
+}
+
+
+/* banner section of website with title/logo */
+
+header {
+    padding: 1em;
+    color: goldenrod;
+    background: black;
+    clear: left;
+    text-align: center;
+}
+
+/* sidebar navigation meant to redirect people to sections of the menu */
+.sidenav {
+    float: left;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 155px;
+    background: goldenrod;
+    overflow-x: hidden;
+    padding: 1px 1px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25 px;
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: grey;
+}
+
+.main {
+    margin-left: 480px;
+    margin-right: 480px;
+    padding: 0px 0px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* menu format and menu item design */
+
+.menu-body {
+  max-width: 470px;
+  margin-left: 200px;
+  display: block;
+  color: rgb(92, 92, 92);
+}
+ 
+.menu-section {
+  margin-bottom: 80px;
+}
+ 
+.menu-section-title {
+  font-family: georgia;
+  font-size: 24px;
+  display: block;
+  font-weight:normal;
+  margin: 20px 0; 
+  text-align: Center;
+  text-decoration: underline;
+}
+ 
+.menu-item {
+  margin-top: 20px;
+  font-size: 18px;
+  margin-left: 2px;
+}
+ 
+.menu-item-name{
+  font-family: helvetica;
+  font-weight: bold;
+  border-bottom: 2px dotted rgb(213, 213, 213);
+  margin-left: 2px;
+}
+ 
+.menu-item-description {
+  font-style: italic;
+  font-size: .9em;
+  line-height: 1.5em;
+  margin-left: 2px;
+}
+ 
+.menu-item-price{
+  float: right;
+  font-weight: bold;
+  font-family: arial;
+  margin-top: -22px;
+}
