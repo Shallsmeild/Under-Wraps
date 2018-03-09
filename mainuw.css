@@ -8,8 +8,17 @@
         background: transparent;
     }
 
+/* to fill up the entire webpage and avoid excess space on the webpage */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 body {
-    background: url("DSC_0056.JPG") no-repeat center center fixed;
+    background: url("DSC_0056_o60.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -17,40 +26,78 @@ body {
     
 }
 p {
-    
+    font-size: 1em;
 }
 
 h1 {
-    font-size: 42px;
+    font-size: 2.625em;
 }
 
 
 /* banner section of website with title/logo */
 
 header {
-    padding: 4em; /*to connect to the sidebar when website scrolled to top */
+    padding: 2em; /*to connect to the sidebar when website scrolled to top */
     color: goldenrod;
     background: black;
     clear: left;
     text-align: center;
 }
 
+/* horizontal navbar with buttons for each webpage */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: goldenrod;
+    text-decoration-color: black;
+}
+
+a {
+    display: block;
+}
+
+li {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    font-size: 1.5em;
+    display: inline-block;
+    border: 1em;
+    text-decoration-color: black;
+}
+
+li a {
+    padding: 14px 0px;
+    color: black;
+}
+
+li a:hover {
+    background-color: white;
+}
+
+li a:active {
+    background-color: black;
+    color: white;
+}
+
 /* sidebar navigation meant to redirect people to sections of the menu */
 .sidenav {
     float: left;
-    width: 200px;
+    width: 12.5em;
     position: fixed;
     z-index: 1;
-    top: 155px;
     background: goldenrod;
     overflow-x: hidden;
-    padding: 1px 1px;
+    padding: 0.0625em 0.0625em;
 }
 
 .sidenav a {
-    padding: 6px 8px 6px 16px;
+    padding: 0.375em .5em 0.375em 1em;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1.5em;
     color: black;
     display: block;
 }
@@ -60,43 +107,43 @@ header {
 }
 
 .main {
-    margin-left: 480px;
-    margin-right: 480px;
-    padding: 0px 0px;
+    margin-left: 30em;
+    margin-right: 30em;
+    padding: 0em 0em;
 }
 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+@media screen and (max-height: 28.125em) {
+    .sidenav {padding-top: 0.9375em;}
+    .sidenav a {font-size: 1.125em;}
 }
 
 /* menu format and menu item design */
 
 .menu-body {
-  max-width: 470px;
-  margin-left: 200px;
+  max-width: 29.375em;
+  margin-left: 12.5em;
   display: block;
   color: rgb(92, 92, 92);
 }
  
 .menu-section {
-  margin-bottom: 80px;
+  margin-bottom: 5em;
 }
 
 .menu-section-title {
   font-family: georgia;
-  font-size: 32px;
+  font-size: 2em;
   display: block;
   font-weight:normal;
-  margin: 20px 0; 
+  margin: 1.25em 0; 
   text-align: Center;
   text-decoration: underline;
 }
  
 .menu-item {
-  margin-top: 20px;
-  font-size: 24px;
-  margin-left: 2px;
+  margin-top: 1.25em;
+  font-size: 1.5em;
+  margin-left: 0.0625em;
   font-weight: bold;
 }
  
@@ -104,15 +151,15 @@ header {
   font-family: helvetica;
   font-weight: bold;
   border-bottom: 2px dotted rgb(213, 213, 213);
-  margin-left: 2px;
-  font-size: 24px;
+  margin-left: 0.0625em;
+  font-size: 1.5em;
 }
  
 .menu-item-description {
   font-style: italic;
   font-size: 1.5em;
   line-height: 1.5em;
-  margin-left: 2px;
+  margin-left: 0.0625em;
   font-weight: bold;
 }
  
@@ -120,6 +167,23 @@ header {
   float: right;
   font-weight: bold;
   font-family: arial;
-  font-size: 24px;
-  margin-top: -22px;
+  font-size: 1.5em;
+  margin-top: -1.375em;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: black;
+    color: grey;
+    font-size: .5em;
+    padding: 1em;
+}
+.footer li {
+    width: 33%;
+}
+
+.footer a {
+    color: grey;
 }
