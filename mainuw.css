@@ -61,7 +61,7 @@ a {
 
 li {
     float: left;
-    width: 33.3%;
+    width: 20%;
     text-align: center;
     font-size: 1.5em;
     display: inline-block;
@@ -133,11 +133,11 @@ li a:active {
 }
 
 .contact_number {
-    height: 6.25em;
-    width: 37.5em;
+    max-height: 6.25em;
+    max-width: 37.5em;
     background: goldenrod;
     color: black;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: bold;
     
     text-align: center;
@@ -146,11 +146,11 @@ li a:active {
 }
 
 .contact_address {
-    height: 6.25em;
-    width: 37.5em;
+    max-height: 6.25em;
+    max-width: 37.5em;
     background: goldenrod;
     color: black;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: bold;
     
     text-align: center;
@@ -159,11 +159,11 @@ li a:active {
 }
 
 .facebook {
-    height: 12.5em;
-    width: 37.5em;
+    max-height: 12.5em;
+    max-width: 37.5em;
     background: blue;
     color: white;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: bold;
     
     text-align: center;
@@ -172,11 +172,11 @@ li a:active {
 }
 
 .bitesquad {
-    height: 12.5em;
-    width: 37.5em;
+    max-height: 12.5em;
+    max-width: 37.5em;
     background: green;
     color: white;
-    font-size: 1em;
+    font-size: 1.25em;
     font-weight: bold;
     
     text-align: center;
