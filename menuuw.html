@@ -1,4 +1,4 @@
-<!-- Underwraps Website, three pages for menus
+<!-- Underwraps Website, five pages for menus
 and a home page -->
 
 <!-- Normal Menu, with nav bar, with images of food -->
@@ -18,11 +18,21 @@ and a home page -->
         <li><a href="index.html">Home</a></li>
         <li><a href="menuuw.html">Menu</a></li>
         <li><a href="cateringuw.html">Catering</a></li>
-        <li><a href="#">Weekend Menu</a></li>
-        <li><a href="#">Happy Hour</a></li>
+        <li><a href="weekend.html">Weekend Menu</a></li>
+        <li><a href="happy.html">Happy Hour</a></li>
     </ul> 
     <div class="sidenav">
-        <a href="menuuw.html#daily"><em>Wraps</em></a>
+        <button class="dropdown-btn"><em>Wraps</em>
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+        <a href="menuuw.html#daily"><em>Daily Specials</em></a>
+        <a href="menuuw.html#faves"><em>Favorite Selections</em></a>
+        <a href="menuuw.html#deli"><em>Deli Selections</em></a>
+        <a href="menuuw.html#veg"><em>Vegetarian</em></a>
+        <a href="menuuw.html#ricefill"><em>Rice Filled</em></a>
+        <a href="menuuw.html#vip"><em>VIP Selections</em></a>
+        </div>
         <a href="menuuw.html#riceb"><em>Ricebowls</em></a>
         <a href="menuuw.html#salads"><em>Salads</em></a>
         <a href="menuuw.html#pitas"><em>Mediterranean</em></a>
@@ -81,7 +91,7 @@ and a home page -->
                     Turkey, Bacon, Romaine, Tomatoes, Ranch
                 </div>
                 </div>
-            <div class="menu-section">
+            <div class="menu-section" id="faves">
             <div class="menu-section-title">
                 Favorite Selections
                 </div>
@@ -131,21 +141,21 @@ and a home page -->
                     Romaine, Black Beans, Corn, Salsa, Cheddar, Southwestern Ranch
                 </div>
                 </div>
-                <div class="menu-section">
+                <div class="menu-section" id="deli">
                 <div class="menu-section-title">
                     Deli Selections
                 </div>
                     <div class="menu-item-name">
                         Southwestern Turkey
                     </div>
-                    <div class="menu-item-price">$5.95</div>
+                    <div class="menu-item-price">$6.25</div>
                         <div class="menu-item-description">
                             Turkey, Romaine, Tomatoes, Provolone, Southwestern Ranch
                         </div>
                     <div class="menu-item-name">
                         Chipotle Turkey
                     </div>
-                    <div class="menu-item-price">$5.95</div>
+                    <div class="menu-item-price">$6.25</div>
                     <div class="menu-item-description">
                         Turkey, Spinach, Tomatoes, Onions, Pepper Jack Cheese, Chipotle Ranch Sauce
                     </div>
@@ -157,19 +167,19 @@ and a home page -->
                 <div class="menu-item-name">
                     Garden
                 </div>
-                <div class="menu-item-price">$5.95</div>
+                <div class="menu-item-price">$6.25</div>
                 <div class="menu-item-description">
                     Romaine, Tomatoes, Red Onions, Black Olives, Feta, Greek Dressing
                 </div>
                 <div class="menu-item-name">
                     Santa Fe
                 </div>
-                <div class="menu-item-price">$5.95</div>
+                <div class="menu-item-price">$6.25</div>
                 <div class="menu-item-description">
                     Romaine, Black Beans, Tomatoes, Corn, Salsa, Cheddar, Southwestern Ranch
                 </div>
                 </div>
-                <div class="menu-section">
+                <div class="menu-section" id+"ricefill">
                     <div class="menu-section-title">
                         Rice Filled
                     </div>
@@ -195,7 +205,7 @@ and a home page -->
                         Steak, Grilled Chicken, Bacon, Rice, Saut&#233ed Peppers, Onions, and Mushrooms, Mozzarella, Steak Sauce 
                     </div>
                 </div>
-                <div class="menu-section">
+                <div class="menu-section" id="vip">
                     <div class="menu-section-title">
                         VIP Selections
                     </div>
@@ -421,5 +431,22 @@ and a home page -->
          <a href="https://www.facebook.com/UnderWrapsTally/"><li>Facebook</li></a>
          <li>Designed by John White</li>
      </div> 
+     <script type="text/javascript">
+        //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+         });
+    } 
+     </script>
   </body>
 </html>
