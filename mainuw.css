@@ -95,7 +95,7 @@ li a:active {
     padding: 0.0625em 0.0625em;
 }
 
-.sidenav a {
+.sidenav a, .dropdown-btn {
     padding: 0.375em .5em 0.375em 1em;
     text-decoration: none;
     font-size: 1.5em;
@@ -103,7 +103,7 @@ li a:active {
     display: block;
 }
 
-.sidenav a:hover {
+.sidenav a:hover, .dropdown-btn:hover {
     color: grey;
 }
 
@@ -111,6 +111,28 @@ li a:active {
     margin-left: 30em;
     margin-right: 30em;
     padding: 0em 0em;
+}
+
+.active {
+    background-color: goldenrod;
+    color: black;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: goldenrod;
+    padding-left: .5em;
+}
+
+button {
+    font-size: 2em;
+    
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: .25em;
 }
 
 @media screen and (max-height: 28.125em) {
